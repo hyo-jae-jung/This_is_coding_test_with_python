@@ -3,7 +3,7 @@ n,m = map(int,stdin.readline().strip().split())
 
 graph = []
 for i in range(n):
-    graph.append(list(map(int,stdin.readline().strip().split())))
+    graph.append(list(map(int,stdin.readline().strip())))
 
 def dfs(x,y):
     if x <=-1 or x >= n or y <= -1 or y >= m:
