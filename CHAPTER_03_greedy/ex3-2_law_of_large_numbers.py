@@ -1,6 +1,3 @@
-from multiprocessing import shared_memory
-
-
 N,M,K = map(int,input().split())
 natural_numbers = [int(i) for i in input().split()]
 natural_numbers.sort(reverse=True)

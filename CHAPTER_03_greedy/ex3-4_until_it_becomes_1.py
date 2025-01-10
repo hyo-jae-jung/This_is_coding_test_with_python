@@ -1,14 +1,13 @@
 N,K = map(int,input().split())
 count = 0
-while N >= K:
+while N > 1:
     if N%K == 0:
         N//=K
         count+=1
     else:
-        N-=1
-        count+=1
-
-count+=N-1 # 이게 2번 요지
+        rest = N%K
+        N-=rest
+        count+=rest
 
 print(count)
 
